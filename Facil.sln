@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30711.63
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Facil.Generator", "src\Facil.Generator\Facil.Generator.fsproj", "{F0D6837B-C337-4585-9367-AA423ECEF4A4}"
 EndProject
@@ -20,9 +20,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.github\CONTRIBUTING.md = .github\CONTRIBUTING.md
 		Directory.Build.props = Directory.Build.props
 		facil_reference.yaml = facil_reference.yaml
+		global.json = global.json
+		Nuget.props = Nuget.props
 		README.md = README.md
 		RELEASE_NOTES.md = RELEASE_NOTES.md
-		global.json = global.json
 	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TestDb", "src\TestDb\TestDb.sqlproj", "{CE4F177F-6835-498A-B29E-0D86E329F2CF}"
@@ -31,7 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1BFECC5F
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DbTests", "src\DbTests\DbTests.fsproj", "{A91669BF-A3CB-4163-B0FA-B5D5CBB77D69}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DbTests.DbGen", "src\DbTests.DbGen\DbTests.DbGen.fsproj", "{96D295AF-F9DD-4ED5-83CA-894B99BDD255}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DbTests.DbGen", "src\DbTests.DbGen\DbTests.DbGen.fsproj", "{96D295AF-F9DD-4ED5-83CA-894B99BDD255}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{BFD68891-E323-41D5-BC5E-4CEF0AE6B206}"
 	ProjectSection(SolutionItems) = preProject

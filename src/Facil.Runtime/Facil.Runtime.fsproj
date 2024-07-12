@@ -2,11 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Facil.Runtime</PackageId>
+    <Description>Facil generates F# data access source code from SQL queries and stored procedures. Optimized for developer happiness. Facil.Runtime contains runtime utilities used by the code Facil generates.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DebugType>Embedded</DebugType>
     <EmbedAllSources>True</EmbedAllSources>
     <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
   </PropertyGroup>
+  <Import Project="../../Nuget.props"/>
+
 
   <ItemGroup>
     <Compile Include="GeneratedCodeUtils.fs" />
