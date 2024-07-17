@@ -16,4 +16,14 @@
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)/facil-logo-128x128.png" Pack="true" PackagePath="" />
   </ItemGroup>
+
+  <Target Name="DeleteOldNupkgFiles" BeforeTargets="GenerateNuspec">
+    <ItemGroup>
+      <FilesToDelete Include="$(MSBuildThisFileDirectory)\nupkg\$(PackageId).nupkg" />
+    </ItemGroup>
+    <Delete Files="@(FilesToDelete)" />
+  </Target>
+  <Target Name="DeleteFacilNuGetCache" AfterTargets="GenerateNuspec">
+    <RemoveDir Directories="$(MSBuildThisFileDirectory)\packages\facil" />
+  </Target>
 </Project>

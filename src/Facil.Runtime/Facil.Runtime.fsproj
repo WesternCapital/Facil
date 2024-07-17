@@ -22,7 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Facil.Runtime.CSharp\Facil.Runtime.CSharp.csproj" />
+    <ProjectReference Include="..\Facil.Runtime.CSharp\Facil.Runtime.CSharp.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>
