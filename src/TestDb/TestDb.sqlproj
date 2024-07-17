@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build">
+<Project DefaultTargets="Build">
 
   <Sdk Name="Microsoft.Build.Sql" Version="0.1.7-preview" />
 
@@ -15,5 +15,7 @@
   <ItemGroup>
 	  <PostDeploy Include="PostDeploymentScript.sql" />
   </ItemGroup>
+
+  <Target Name="Pack" />
 
 </Project>
