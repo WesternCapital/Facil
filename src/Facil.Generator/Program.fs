@@ -1,4 +1,4 @@
-﻿namespace Facil
+namespace Facil
 
 open System
 open System.IO
@@ -8,6 +8,14 @@ open GlobExpressions
 
 
 module Program =
+
+    type System.String with
+        member this.Split(separator: string) =
+            this.Split([|separator|], StringSplitOptions.None)
+
+    type System.Security.Cryptography.SHA256 with
+        static member HashData (bytes: byte array) =
+            System.Security.Cryptography.SHA256.Create().ComputeHash(bytes)
 
 
     let envvar_force_regenerate = "FACIL_FORCE_REGENERATE"
