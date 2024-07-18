@@ -8,12 +8,6 @@ open System.Text.RegularExpressions
 open Microsoft.Data.SqlClient
 open Microsoft.SqlServer.TransactSql.ScriptDom
 
-type SqlDataReader with
-    member this.IsDBNull(columnName: string) =
-        this.GetOrdinal(columnName)
-        |> this.IsDBNull
-        
-
 let adjustSizeForDbType (dbType: SqlDbType) (size: int16) =
     match dbType with
     | SqlDbType.NChar
